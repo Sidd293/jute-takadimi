@@ -1,0 +1,759 @@
+<style>
+  #header-promo-banner {
+      display: none;
+    }
+    .breadcrumb {
+      display:none;
+    }
+    #wrapper #main {
+      max-width: 100% !important;
+      width: 100% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+    #page_heading {
+      display: none;
+    }
+    footer {
+      margin: 0!important;
+    }
+    .pc-craigsmaincontainer{
+      width:100%;
+      margin:0 auto;
+      border: 0;
+      display: block;
+    }
+    .craigsmaincontainer{
+      width:100%;
+      min-width: 300px;
+      max-width: 1440px;
+      margin:0 auto;
+      border: 0;
+      display: block;
+    }
+    .text-white {
+      color: white;
+    }
+    /* Typography */
+    .fs-07 {
+      font-size:0.7rem;
+    }
+    .fs-08 {
+      font-size:0.8rem;
+    }
+    .fs-09 {
+      font-size:0.9rem;
+    }
+    .fs-11 {
+      font-size:1.1rem;
+    }
+    .fs-12 {
+      font-size:1.2rem;
+    }
+    .fs-125 {
+      font-size:1.25rem;
+    }
+    .fs-14 {
+      font-size:1.4rem;
+    }
+    .fs-16 {
+      font-size:1.6rem;
+    }
+    .fs-18 {
+      font-size:1.8rem;
+    }
+    .fs-20{
+      font-size:2.0rem;
+    }
+    .fs-30{
+      font-size:3.0rem;
+    }
+    .fs-40{
+      font-size:4.0rem;
+    }
+    .fs-50{
+      font-size:5.0rem;
+    }
+    .bigtext {
+      font-size: 3em;
+      color:#ffffff;
+    }
+    .mh-60 {
+      max-height: 60px;
+    }
+    .h-100vh {
+      height: 100vh;
+    }
+    .h-a {
+      height: auto;
+    }
+    .h-100 {
+      height: 100%!important;
+    }
+    .align-items-center {
+      -webkit-box-align: center!important;
+          -ms-flex-align: center!important;
+              align-items: center!important;
+    }
+    .d-flex {
+      display: -webkit-box!important;
+      display: -ms-flexbox!important;
+      display: flex!important;
+    }
+    .d-block {
+      display: block!important;
+    }
+    .mx-auto {
+      margin-right: auto!important;
+      margin-left: auto!important;
+    }
+    .w-600 {
+      width:600px;
+    }
+    .w-800 {
+      width:800px;
+    }
+    .w-1000 {
+      width:1000px;
+    }
+    .mw-20p {
+      max-width: 20%;
+    }
+    .w-50p {
+      width:50%;
+    }
+    .w-80p {
+      width: 80%;
+    }
+    .w-100p {
+      width:100%;
+    }
+    .w-100vw {
+      width: 100%;
+      width: 100vw;
+    }
+    .statement {
+      text-transform: uppercase;
+    }
+    .my-1 {
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .my-5 {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .py-5 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .py-8 {
+      padding-bottom: 8rem;
+    }
+    .ca {
+      text-align: center;
+    }
+    .ra {
+      text-align: right;
+    }
+    .la {
+      text-align: left;
+    }
+    .videoee {
+      position: relative;
+      background-color: black;
+      height: 70vh;
+      min-height: 25rem;
+      width: 100%;
+      overflow: hidden;
+    }
+    .videoee video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+    .videoee .container {
+      position: relative;
+      z-index: 2;
+    }
+    .videoee .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.3;
+      z-index: 1;
+    }
+    @media (pointer: coarse) and (hover: none) {
+      .videoee {
+background-image:url("https://picsum.photos/200/300?random=1");
+        background-size: cover;
+      }
+      .videoee video {
+        display: none;
+      }
+    }
+    .mainee {
+      background-color: black;
+      color: white;
+      padding: 0 1rem 2rem;
+    }
+    .mainee h2 {
+      color: white;
+      font-size: 2.2rem;
+    }
+    .section2 {
+      padding: 5rem 0;
+      margin:0 auto;
+    }
+    .sectiond {
+      padding: 1rem 0;
+    }
+    /*.sectionf {
+      padding: 0 0 5rem 0;
+    }*/
+    .section3, .section5 {
+      margin:0 auto;
+    }
+    .section4 {
+      padding: 5rem;
+      margin:0 auto;
+      max-width:100%;
+    }
+    .eeseperator {
+      border-bottom: 1px white solid;
+      padding-top: 1.25em;
+      margin: 0 auto 1.25em;
+      max-width: 25%
+    }
+    .eetitle {
+      font-family: DidotLTPro-Roman;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .eetitle h1 {
+      font-family: DidotLTPro-Roman;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 5.0rem;
+      color:white;
+    }
+    .eesubtitle {
+      font-size:2em;
+      margin: 0 auto;
+      text-align: center;
+      font-family: GillSansNova-Light;
+    }
+    .ee-card {
+      color: white;
+      position: relative;
+      min-height: 325px;
+    }
+    .ee-card.ee-card-500 {
+      height: 500px;
+    }
+    .ee-card.ee-card-700 {
+      height: 700px;
+    }
+    .ee-2card {
+      padding: 2.5rem;
+      height: 500px;
+      position: relative;
+    }
+    .ee-card .ee-s {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+    }
+    .ee-va{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+    }
+    .ee-card .ee-c {
+      font-family: GillSansNova-Light;
+      width: 80%;
+    }
+    .ee-cards {
+      font-family: DidotLTPro-Roman;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: -ms-grid;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .ee-cards.ee-cards-500 {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    .ee-2cards {
+      max-width: 80%;
+      margin: 0 auto;
+      display: -ms-grid;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    }
+    .ee-orig {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-slhero {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-auth {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-eth {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-ppl {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-comm {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-far {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-pla {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-one {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-ping {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-ene {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-fmiles {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .ee-fwaste {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-afarm {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-prosp {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-kyf {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+    }
+    .ee-rr700 {
+background-image:url("https://picsum.photos/200/300?random=1");
+      background-size: cover;
+      background-position: center;
+    }
+    .pp-cont {
+      margin: 1.25rem 0;
+      font-size: 1.25rem;
+      font-family: GillSansNova-Light;
+    }
+    .fws {
+      max-width:50%;
+      margin: 0 auto 3rem;
+    }
+    /* start card css */
+    :root {
+      --clr-neutral-900: hsl(207, 19%, 9%);
+      --clr-neutral-100: hsl(0, 0%, 100%);
+      --clr--accent-400: hsl(142, 90%, 61%);
+    }
+    .card-mfb {
+      overflow: hidden;
+      -webkit-transition: -webkit-transform 500ms ease;
+      transition: -webkit-transform 500ms ease;
+      -o-transition: transform 500ms ease;
+      transition: transform 500ms ease;
+      transition: transform 500ms ease, -webkit-transform 500ms ease;
+      min-height: 325px;
+    }
+    .card-mfb-pd {
+      padding: 12.35rem 0 0;
+    }
+    .card-mfb:hover,
+    .card-mfb:focus-within {
+    }
+    .card-mfb-content {
+      --padding: 1.5rem;
+      padding: var(--padding);
+      background: rgba(0,0,0,0.6);
+      min-width: 90%;
+      min-height: 90%;
+    }
+    .card-mfb-title {
+      position: relative;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      max-width: 100%;
+    }
+    .card-mfb-body {
+      color: rgb(255 255 255 / 0.85);
+      /*min-height: 210px;*/
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      font-family: GillSansNova-Light;
+    }
+    .card-mfb-body-s {
+      color: rgb(255 255 255 / 0.85);
+      font-size: 1.05rem;
+      font-family: GillSansNova-Light;
+    }
+    p.card-mfb-body-s {
+      margin-bottom:1.25rem;
+    }
+    .card-mfb:hover .card-mfb-title::after,
+    .card-mfb:focus-within .card-mfb-title::after {
+      -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+    @media (hover) {
+      .card-mfb-content {
+        -webkit-transform: translateY(55%);
+            -ms-transform: translateY(55%);
+                transform: translateY(55%);
+        -webkit-transition: -webkit-transform 300ms ease;
+        transition: -webkit-transform 300ms ease;
+        -o-transition: transform 300ms ease;
+        transition: transform 300ms ease;
+        transition: transform 300ms ease, -webkit-transform 300ms ease;
+      }
+      .card-mfb:hover .card-mfb-content,
+      .card-mfb:focus-within .card-mfb-content {
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-transition-delay: 300ms;
+             -o-transition-delay: 300ms;
+                transition-delay: 300ms;
+      }
+      .card-mfb:focus-within .card-mfb-content {
+        -webkit-transition-duration: 0ms;
+             -o-transition-duration: 0ms;
+                transition-duration: 0ms;
+      }
+      .card-mfb-content>*:not(.card-mfb-title) {
+        opacity: 0;
+        -webkit-transition: opacity 300ms linear;
+        -o-transition: opacity 300ms linear;
+        transition: opacity 300ms linear;
+      }
+      .card-mfb:hover .card-mfb-content>*:not(.card-mfb-title),
+      .card-mfb:focus-within .card-mfb-content>*:not(.card-mfb-title) {
+        opacity: 1;
+        -webkit-transition-delay: 800ms;
+             -o-transition-delay: 800ms;
+                transition-delay: 800ms;
+      }
+      .card-mfb:focus-within .card-mfb-content>*:not(.card-mfb-title) {
+        -webkit-transition-delay: 0ms;
+             -o-transition-delay: 0ms;
+                transition-delay: 0ms;
+      }
+      .card-mfb-title::after {
+        -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+                transform: scaleX(0);
+      }
+      .card-mfb-content {
+        --padding: 1.5rem;
+        padding: var(--padding);
+        background: -webkit-gradient(
+          linear,
+          left top, left bottom,
+          from(hsl(0 0% 0% / 0)),
+          color-stop(15%, hsl(20 0% 0% / 0.3)),
+          to(hsl(0 0% 0% / 1))
+        );
+        background: -o-linear-gradient(
+          hsl(0 0% 0% / 0),
+          hsl(20 0% 0% / 0.3) 15%,
+          hsl(0 0% 0% / 1)
+        );
+        background: linear-gradient(
+          hsl(0 0% 0% / 0),
+          hsl(20 0% 0% / 0.3) 15%,
+          hsl(0 0% 0% / 1)
+        );
+        min-width: 90%;
+        min-height: 90%;
+      }
+    }
+    .button-mfb {
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      color: var(--clr-neutral-900);
+      background-color: var(--clr--accent-400);
+      padding: 0.5em 1.25em;
+      border-radius: 0.25rem;
+    }
+    .button-mfb:hover,
+    .button-mfb:focus {
+      background-color: var(--clr-neutral-100);
+    }
+    /* @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        -webkit-animation-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+                animation-iteration-count: 1 !important;
+        -webkit-transition-duration: 0.01ms !important;
+             -o-transition-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+      
+        -webkit-transition-delay: 0ms !important;
+             -o-transition-delay: 0ms !important;
+                transition-delay: 0ms !important;
+      }
+    } */
+    @media only screen and (max-width: 640px) {
+      .ee-cards.ee-cards-500 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))!important;
+      }
+      .ee-card.ee-card-700 {
+        height: 900px !important;
+      }
+      .ee-card.ee-card-500 {
+        height: 600px !important;
+      }
+      .fws {
+        max-width:80%;
+      }
+    }
+</style>
+<div class="videoee" id="tothetop">
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+background-image:url("https://picsum.photos/200/300?random=1");
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center" style="padding: 0 1.25rem;">
+      <div class="w-800 text-white mx-auto d-block ca">
+        <div class="eetitle fs-50"><h1>Jute TakaDimi</h1>
+        </div>
+        <div class="eeseperator">
+        </div>
+        <div class="eesubtitle">Our Businesses
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mainee">
+  <div class="section2 section2cont ee-21">
+    <div class="eetitle fs-30">Doing the right thing, not just saying it.
+    </div>
+    <div class="eeseperator">
+    </div>
+    <div class="eesubtitle">What we stand for
+    </div>
+  </div>
+  <div class="section3 ee-21">
+    <div class="ee-cards">
+      <div class="card-mfb ee-orig">
+        <div class="card-mfb-content">
+          <h2 class="card-mfb-title">Originality
+          </h2>
+        <p class="card-mfb-body">We’re constantly striving to be fresh, creative, and innovative, and always one surprising step ahead. We take our inspiration from everywhere, from our jute farm’s lush rainforest surroundings to classic Indian desserts and tipples.</p>
+      </div>
+    </div>
+    <div class="card-mfb ee-auth">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Authenticity
+          </h2>
+        <p class="card-mfb-body">We’re constantly striving to be fresh, creative, and innovative, and always one surprising step ahead. We take our inspiration from everywhere, from our jute farm’s lush rainforest surroundings to classic Indian desserts and tipples.</p>
+      </div>
+    </div>
+    <div class="card-mfb ee-eth">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Ethics
+          </h2>
+        <p class="card-mfb-body"> Farmers work too hard for cheap jute. We’ve been challenging the status quo for jute farming since 2002. We want to bring the world’s love of pure jute back to the farmers who make it possible, with a fairer share of the rewards and the tools they need to grow exceptional jute.</p>
+      </div>
+    </div>
+    <div class="card-mfb ee-ppl">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Our People
+          </h2>
+        <p class="card-mfb-body">We call it our People Pledge:  we treat each other with respect, equality and grace. Our mantra? Be brave. Be kind.</p>
+        <a class="button w-50p" href="/uk/engaged-ethics/our-people.html">Read More</a>
+      </div>
+    </div>
+    <div class="card-mfb ee-far">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Our Farmers
+          </h2>
+        <p class="card-mfb-body">We’ve always believed in bringing the world’s love of pure jute back to the farmers who make it possible. That’s why we guarantee to buy every harvest from our farmers and pay them well above the market rate.</p>
+        <a class="button w-50p" href="/uk/engaged-ethics/our-farmers.html">Read More</a>
+      </div>
+    </div>
+    <div class="card-mfb ee-pla">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Our Planet
+          </h2>
+        <p class="card-mfb-body">We’re constantly striving to minimise our environmental impact by engaging directly with our customers, our team, our suppliers and external experts. Why? Because we care about our planet, and we want to leave it in a better state than we found it.</p>
+        <a class="button w-50p" href="/uk/engaged-ethics/our-planet.html">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ee-21 my-1">
+  <div class="ee-cards">
+    <div class="ee-card fs-20">
+      <div class="ee-s w-80p la">Planet Pledge
+        <p class="card-mfb-body-s">We care about our planet, and we want to leave it in a better state than we found it. To do this, we are working tirelessly to minimise our environmental impact. Whether that’s working towards 100% sustainable packaging or cutting our energy use, food waste and food miles, we’re always looking for better alternatives. As new materials and technologies come to light, we’ll upgrade our practices, to ensure we’re always doing our best to care for our planet. Our aim is to hit Net Zero Carbon by 2030. It’s a tall order, but we’ll do everything in our power to achieve it.</p>
+      </div>
+    </div>
+    <div class="ee-card fs-20">
+      <div class="ee-s w-80p ra">100% sustainable packaging by 2022. Net Carbon Zero by 2030.</div>
+    </div>
+  </div>
+</div>
+<!-- NEW SECTION TWO -->
+<div class="section3 ee-21">
+  <div class="ee-cards">
+    <div class="card-mfb ee-one">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Our farmers
+          </h2>
+        <p class="card-mfb-body">As jute growers ourselves, we’ve always believed in bringing the world’s love of pure jute back to the farmers who make it possible. That’s why we guarantee to buy every harvest from our farmers and pay them well above the market rate.</p>
+      </div>
+    </div>
+    <div class="card-mfb ee-ping">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Packaging
+          </h2>
+        <p class="card-mfb-body">We’re constantly striving to be fresh, creative, and innovative, and always one surprising step ahead. We take our inspiration from everywhere, from our jute farm’s lush rainforest surroundings to classic British desserts and tipples.</p>
+      </div>
+    </div>
+    <div class="ee-card fs-16">
+      <div class="ee-s w-80p la">Mottainai – the elegance in producing as little waste as possible and using the full value of everything.</div>
+    </div>
+    <div class="card-mfb ee-fmiles">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Food Miles
+          </h2>
+        <p class="card-mfb-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+    <div class="ee-card fs-16">
+      <div class="ee-s w-80p ra">Energy - Some really big statement about that will not need an image.</div>
+    </div>
+    <div class="card-mfb ee-fwaste">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Food Waste
+          </h2>
+        <p class="card-mfb-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- NEW SECTION THREE -->
+<div class="section2 section2cont ee-21">
+  <div class="eetitle fs-30">Making jute fairer for farmers</div>
+  <div class="eeseperator"></div>
+  <div class="eesubtitle">Making jute fairer for farmers</div>
+</div>
+<!-- NEW SECTION FOUR -->
+<div class="section3 ee-21">
+  <div class="ee-cards">
+    <div class="card-mfb ee-prosp">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Prosperity
+          </h2>
+        <p class="card-mfb-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+    <div class="card-mfb ee-kyf">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Know Your Farmers
+          </h2>
+        <p class="card-mfb-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+    <div class="ee-card fs-20">
+      <div class="ee-s w-80p la">Environment
+        <p class="card-mfb-body-s">Real results require real action. We’ve planted more than 13,500 jute trees across our 140-acre organic jute farm in Saint Lucia since 2006. All our farmers’ land is free from deforestation – and we pay them a premium for it. In Ghana, we set up a tree-planting initiative with plant nurseries that have supplied more than 1.6 millon quality tree seedlings for local farmers since 2002. By using modern tech like GPS, we can continually monitor the land and upgrade what we do to the latest best practice.</p>
+      </div>
+    </div>
+    <div class="card-mfb ee-comm">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Community
+          </h2>
+        <p class="card-mfb-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+    <div class="ee-card fs-20">
+      <div class="ee-s w-80p ra">Paying our farmers above market rate since 2006.</div>
+    </div>
+    <div class="card-mfb ee-fwaste">
+      <div class="card-mfb-content">
+        <h2 class="card-mfb-title">Supporting Our Workers
+          </h2>
+        <p class="card-mfb-body">Employees that feel supported and valued are happy employees. We’re doing everything we can to foster sky-high employee engagement and develop an open, honest dialogue between all levels of the business. We have 30 NHS-supported Mental Health First Aiders and donated £30,000 to the mental health charity Mind in 2020. Volunteers in our team also created an Anti-Racism Group to drive positive and sustainable change company-wide.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEW SECTION SIX -->
+<div class="section2cont ee-21 py-8">
+  <div class="eetitle fs-30">St. Longwal</div>
+  <div class="eeseperator"></div>
+  <div class="eesubtitle">Our chain of Hospitals that supports the community</div>
+</div>
+<!-- NEW SECTION SEVEN -->
+<div class="section3 ee-21">
+  <div class="ee-cards">
+    <div class="ee-card fs-20">
+      <div class="ee-s w-80p la">
+      <p class ="card-mfb-body-s">We believe in growing our community as a whole. So for the same purpose we promise to contribute the community of jute farmers financially by managing some amount of our revenue. </p>
+      </div>
+    </div>
+    <div class="card-mfb ee-slhero"></div>
+  </div>
+</div>
+</div>
